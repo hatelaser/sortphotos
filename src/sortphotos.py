@@ -249,14 +249,14 @@ if __name__ == '__main__':
     parser.add_argument('src_dir', type=str, help='source directory (searched recursively)')
     parser.add_argument('dest_dir', type=str, help='destination directory')
     parser.add_argument('-m', '--move', action='store_true', help='move files instead of copy')
-    parser.add_argument('-s', '--sort', type=str, default='%Y/%m-%b',
+    parser.add_argument('-s', '--sort', type=str, default='%Y/%m-%B',
                         help="choose destination folder structure using datetime format \n\
 https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior. \n\
 Use forward slashes / to indicate subdirectory(ies) (independent of your OS convention). \n\
-The default is '%%Y/%%m-%%b', which separates by year then month \n\
-with both the month number and name (e.g., 2012/12-Feb).")
+The default is '%%Y/%%m-%%B', which separates by year then month \n\
+with both the month number and name (e.g., 2012/02-February).")
     parser.add_argument('--keep-duplicates', action='store_true',
-                        help='If file is a duplicate keep it anyway (after renmaing).')
+                        help='If file is a duplicate keep it anyway (after renaming).')
     parser.add_argument('--extensions', type=str, nargs='+',
                         default=['jpg', 'jpeg', 'tiff', 'arw', 'avi', 'mov', 'mp4', 'mts'],
                         help='file types to sort')
