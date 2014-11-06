@@ -66,7 +66,7 @@ def check_for_early_morning_photos(date, day_begins):
     """check for early hour photos to be grouped with previous day"""
 
     if date.hour < day_begins:
-        date = date - timedelta(hours=date.hour+1)  # push it to the day before for classificiation purposes
+        date = date - timedelta(hours=date.hour+1)  # push it to the day before for classification purposes
 
     return date
 
