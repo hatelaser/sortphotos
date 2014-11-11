@@ -258,7 +258,7 @@ with both the month number and name (e.g., 2012/02-February).")
     parser.add_argument('--keep-duplicates', action='store_true',
                         help='If file is a duplicate keep it anyway (after renaming).')
     parser.add_argument('--extensions', type=str, nargs='+',
-                        default=['jpg', 'jpeg', 'tiff', 'arw', 'avi', 'mov', 'mp4', 'mts'],
+                        default=['jpg', 'jpeg', 'tiff', 'tif', '3gp', '3gpp', 'png', 'wmv', 'arw', 'avi', 'mov', 'mp4', 'mts'],
                         help='file types to sort')
     parser.add_argument('--ignore-exif', action='store_true',
                         help='always use file time stamp even if EXIF data exists')
